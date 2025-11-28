@@ -8,7 +8,7 @@ CMD chown -R root:wheel /root
 CMD chmod 700 /root/.ssh
 CMD chmod 600 /root/.ssh/authorized_keys
 
-CMD pw useradd ansible -g ansible -s /usr/local/bin/bash -d /home/ansible
+CMD pw useradd ansible -s /usr/local/bin/bash -d /home/ansible
 CP home /home/
 CMD chown -R ansible:ansible /home/ansible
 CMD chmod 700 /home/ansible/.ssh
