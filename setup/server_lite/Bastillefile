@@ -2,7 +2,7 @@ PKG bash bash-completion ca_root_nss git-lite sudo vim
 CP root /
 CP usr /
 
-CP sudoers.d /usr/local/etc/sudoers.d/
+CP usr /
 
 CMD chown -R root:wheel /root
 CMD chmod 700 /root/.ssh
@@ -14,7 +14,7 @@ CMD chown -R ansible:ansible /home/ansible
 CMD chmod 700 /home/ansible/.ssh
 CMD chmod 600 /home/ansible/.ssh/authorized_keys
 
-CP etc /etc/
+CP etc /
 CMD rm /etc/ssh/ssh_host_*
 SYSRC sshd_dsa_enable="NO"
 SYSRC sshd_ecdsa_enable="NO"
