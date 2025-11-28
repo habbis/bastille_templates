@@ -9,7 +9,7 @@ CMD chmod 700 /root/.ssh
 CMD chmod 600 /root/.ssh/authorized_keys
 
 CMD pw useradd ansible -s /usr/local/bin/bash
-CP home /home/
+CP home /
 CMD chown -R ansible:ansible /home/ansible
 CMD chmod 700 /home/ansible/.ssh
 CMD chmod 600 /home/ansible/.ssh/authorized_keys
