@@ -15,7 +15,7 @@ CMD chmod 700 /home/ansible/.ssh
 CMD chmod 600 /home/ansible/.ssh/authorized_keys
 
 CP etc /
-CMD rm /etc/ssh/ssh_host_*
+#CMD rm /etc/ssh/ssh_host_*
 SYSRC sshd_dsa_enable="NO"
 SYSRC sshd_ecdsa_enable="NO"
 SYSRC sshd_ed25519_enable="YES"
